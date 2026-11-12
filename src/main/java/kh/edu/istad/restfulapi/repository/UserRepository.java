@@ -35,10 +35,11 @@ public class UserRepository {
                 .findFirst();
     }
 
-    public void insert(User user) {
-        users.add(user);
 
-    }
+ public void insetUser(User user) {
+     users.add(user);
+ }
+
 
 
 

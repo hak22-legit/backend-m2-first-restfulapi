@@ -36,6 +36,7 @@ public class UserServiceImpl implements UserService {
         newUser.setUsername(createUserRequest.username());
         newUser.setPassword(createUserRequest.password());
         newUser.setIsActive(true);
+        userRepository.insetUser(newUser);
         return newUser;
     }
 
