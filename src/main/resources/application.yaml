@@ -1,5 +1,20 @@
 spring:
   application:
     name: restful-api
+  # configure datasource
+  datasource:
+    url: jdbc:postgresql://localhost:5432/m2-db
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  # Configure JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
 server:
   port: 4141
+
